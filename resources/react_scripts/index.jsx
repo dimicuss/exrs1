@@ -124,10 +124,12 @@
 
 	class Rest extends React.Component {
 		render() {
-			const mod = this.props.mod
+			const
+				mod = this.props.mod,
+				color = this.props.color
 			return <div className={`rest ${ mod ? '_' + mod : ''} inline`}>
 				<div className="rest__name clearfix">
-					<div className={`rest__name__text _${this.props.color} inline`}>{this.props.name}</div>
+					<div className={`rest__name__text ${ color ? '_' + color: ''} inline`}>{this.props.name}</div>
 					<img className="rest__name__img inline"src={this.props.imgUrl} alt="Not found"/>
 				</div>
 				<p className="rest__description">{this.props.description}</p>
