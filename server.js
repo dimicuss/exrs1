@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 })
 
 app.use((req, res) => {
-	const phrase = 'There is mo such request!'
+	const phrase = 'There is no such request!'
 	console.log(phrase)
 	res.send(phrase)
 })
